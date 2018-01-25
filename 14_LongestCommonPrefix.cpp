@@ -3,13 +3,12 @@ public:
     string longestCommonPrefix(vector<string>& strs) 
     {
         string tmp;
-		//如果vector为空，访问strs[0]就会报错，非常隐蔽的错误
+	//濡傛灉vector涓虹┖锛岃闂畇trs[0]灏变細鎶ラ敊锛岄潪甯搁殣钄界殑閿欒
         //string result = strs[0];
         if (strs.size()<=0)
         {
             return tmp;
         }
-		//如果vector为空，访问strs[0]就会报错，非常隐蔽的错误
         string result = strs[0];
         for(int i = 0; i<strs.size(); i++)
         {
