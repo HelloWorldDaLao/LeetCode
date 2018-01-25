@@ -12,23 +12,23 @@ public:
         ListNode *a,*b,*c;
         a = b = c= head;
         for(int i=0;i<n;i++)
-		{
-			b=b->next;
-		}
+	{
+	    b=b->next;
+	}
         if(b==NULL)
         {
             c=c->next;
             free(a);
             return c;
         }
-		while(b->next!=NULL)
-		{
-			a=a->next;
-			b=b->next;
-		}
-		b=a->next;
-		free(b);
-		a->next=a->next->next;
+	while(b->next!=NULL)
+	{
+	    a=a->next;
+	    b=b->next;
+	}
+	b=a->next;
+	free(b);
+	a->next=a->next->next;
         return c;
     }
 };
