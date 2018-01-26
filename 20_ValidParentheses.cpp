@@ -21,14 +21,14 @@ public:
 					else
 						stack.pop_back();
 				}
-				if(s[i]==']')
+				else if(s[i]==']')
 				{
 					if(stack.back()!='[')
 						return false;
 					else
 						stack.pop_back();
 				}
-				if(s[i]=='}')
+				else if(s[i]=='}')
 				{
 					if(stack.back()!='{')
 						return false;
