@@ -20,8 +20,8 @@ public:
 		}
 		for(int i=start; i<candidates.size(); i++)
 		{
-                if(i!=start && candidates[i]==candidates[i-1])
-                continue;
+                	if(i!=start && candidates[i]==candidates[i-1])
+                		continue;
 			//key作为树的枝减条件，当树搜索到正确的结果后，或者target为负后，就可以将右子树枝减掉
 			int key;
 		        tmp.push_back(candidates[i]);
