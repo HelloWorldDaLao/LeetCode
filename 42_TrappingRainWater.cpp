@@ -2,7 +2,7 @@ class Solution {
 public:
     int trap(vector<int>& height) {
         int res = 0;
-		int size = height.size();
+	int size = height.size();
         if(size<3)
         {
             return 0;    
